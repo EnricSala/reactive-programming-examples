@@ -2,7 +2,7 @@ package com.github.enricsala.reactive.problems;
 
 import reactor.core.publisher.Mono;
 
-final class Problem_2 {
+final class Problem_002 {
     private Service service;
 
     Mono<Void> problem() {

@@ -7,7 +7,7 @@ import reactor.core.publisher.Mono;
  * {@link Service#update}, so the update of the element emitted by {@link Service#create} would not
  * be subscribed.
  */
-final class Solution_2 {
+final class Solution_002 {
     private Service service;
 
     /** Use {@link Mono#flatMap} so that the inner {@link Mono} is subscribed. */

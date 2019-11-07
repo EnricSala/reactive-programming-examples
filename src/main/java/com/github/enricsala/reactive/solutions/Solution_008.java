@@ -21,7 +21,7 @@ import reactor.util.concurrent.Queues;
  * <p>Even better, prefer using {@link Flux#concatMap(Function)} by default to ensure sequential
  * subscription unless parallelism is required.
  */
-final class Solution_8 {
+final class Solution_008 {
     private Service service;
 
     /** Limit the maximum concurrency using the {@link Flux#flatMap(Function, int)} overload. */

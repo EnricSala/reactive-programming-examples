@@ -8,7 +8,7 @@ import reactor.core.publisher.Mono;
  * The problem is that an {@link Iterable} does not offer support for closing and releasing
  * resources, so the caller would not be unable to dispose the subscription.
  */
-final class Solution_9 {
+final class Solution_009 {
     private Service service;
 
     /** For example could use a {@link Stream} which supports closing. */

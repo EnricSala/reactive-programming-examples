@@ -22,7 +22,7 @@ import reactor.core.publisher.Mono;
  * <p>In conclusion, {@link Publisher}s must be safe to resubscribe, so mutable state should be
  * avoided and always deferred so that each subscription gets its own instance.
  */
-final class Solution_7 {
+final class Solution_007 {
     private Service service;
 
     /**

@@ -3,7 +3,7 @@ package com.github.enricsala.reactive.problems;
 import java.util.concurrent.atomic.AtomicInteger;
 import reactor.core.publisher.Flux;
 
-final class Problem_6 {
+final class Problem_006 {
     private Service service;
 
     Flux<Integer> problem() {

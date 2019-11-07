@@ -17,7 +17,7 @@ import reactor.core.publisher.Mono;
  * to this shared mutable state could be concurrent, which could cause problems if the shared
  * resource is not thread safe.
  */
-final class Solution_6 {
+final class Solution_006 {
     private Service service;
 
     /**

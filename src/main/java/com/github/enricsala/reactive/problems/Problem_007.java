@@ -4,7 +4,7 @@ import java.io.ByteArrayInputStream;
 import java.io.InputStream;
 import reactor.core.publisher.Mono;
 
-final class Problem_7 {
+final class Problem_007 {
     private Service service;
 
     Mono<Void> problem(byte[] data) {

@@ -8,7 +8,7 @@ import reactor.core.publisher.Mono;
  * be a cancellation signal that will cancel inner subscribers, but {@link Mono#block} cannot listen
  * to that signal and will run to completion, or until an error is thrown.
  */
-final class Solution_3 {
+final class Solution_003 {
     private Service service;
 
     /**

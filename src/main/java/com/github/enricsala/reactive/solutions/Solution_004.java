@@ -12,7 +12,7 @@ import reactor.core.scheduler.Scheduler;
  * will return immediately, so any exception thrown during its execution will not be caught by the
  * try/catch.
  */
-final class Solution_4 {
+final class Solution_004 {
     private Service service;
 
     /**

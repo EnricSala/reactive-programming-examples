@@ -2,17 +2,12 @@ package com.github.enricsala.reactive.problems;
 
 import reactor.core.publisher.Mono;
 
-final class Problem_5 {
+final class Problem_003 {
     private Service service;
 
     Mono<Void> problem() {
         return service.create("foo")
-                .map(
-                        str -> {
-                            service.update(str).subscribe();
-                            return str.length();
-                        })
-                .doOnNext(len -> System.out.println("Length is: " + len))
+                .doOnNext(foo -> service.update(foo).block())
                 .then();
     }
 

@@ -6,7 +6,7 @@ import reactor.core.publisher.Mono;
  * The problem is that the {@link Service#update} would not be executed because the returned {@link
  * Mono} is ignored and therefore not subscribed.
  */
-final class Solution_1 {
+final class Solution_001 {
     private Service service;
 
     /** Apply a terminal operation to execute it (use sparingly). */

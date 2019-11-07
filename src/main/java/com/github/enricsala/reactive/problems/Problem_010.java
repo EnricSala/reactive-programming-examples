@@ -4,7 +4,7 @@ import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 import reactor.core.scheduler.Schedulers;
 
-final class Problem_10 {
+final class Problem_010 {
     private Service service;
     private Repository repository;
 

@@ -8,7 +8,7 @@ import reactor.core.publisher.Mono;
  * could create a detached subscription where we miss errors plus we cannot cancel it, and similarly
  * a {@link Mono#block} cannot be cancelled.
  */
-final class Solution_5 {
+final class Solution_005 {
     private Service service;
 
     /** Use {@link Mono#flatMap} with {@link Mono#thenReturn} to implement this. */

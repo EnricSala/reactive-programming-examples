@@ -2,11 +2,15 @@ package com.github.enricsala.reactive.problems;
 
 import reactor.core.publisher.Mono;
 
-final class Problem_1 {
+final class Problem_004 {
     private Service service;
 
     void problem() {
-        service.update("foo");
+        try {
+            service.update("foo").subscribe();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
     interface Service {

@@ -15,7 +15,7 @@ import reactor.core.scheduler.Schedulers;
  * application startup then it would require restarting the application. This can be the case for
  * example if we start the task in a handler of a life cycle event of an application.
  */
-final class Solution_10 {
+final class Solution_010 {
     private Service service;
     private Repository repository;
 
@@ -27,7 +27,10 @@ final class Solution_10 {
      */
     void startLongRunningTask() {
         service.observe()
-                .switchMap(content -> repository.save(content).onErrorResume(t -> Mono.empty()))
+                .switchMap(
+                        content ->
+                                repository.save(content)
+                                        .onErrorResume(t -> Mono.empty()))
                 .subscribeOn(Schedulers.elastic())
                 .doOnSubscribe(unused -> System.out.println("Starting..."))
                 .subscribe();

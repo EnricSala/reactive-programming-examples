@@ -3,7 +3,7 @@ package com.github.enricsala.reactive.problems;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
-final class Problem_9 {
+final class Problem_009 {
     private Service service;
 
     /**
